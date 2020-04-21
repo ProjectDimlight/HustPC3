@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Dec 16 00:05:49 2019
+# Process ID: 6421
+# Current directory: /home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/RAM16k2p_synth_1
+# Command line: vivado -log RAM16k2p.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RAM16k2p.tcl
+# Log file: /home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/RAM16k2p_synth_1/RAM16k2p.vds
+# Journal file: /home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/RAM16k2p_synth_1/vivado.jou
+#-----------------------------------------------------------
+source RAM16k2p.tcl -notrace

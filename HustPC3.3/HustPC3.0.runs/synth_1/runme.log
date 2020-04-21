@@ -1,0 +1,1343 @@
+
+*** Running vivado
+    with args -log MotherBoard.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MotherBoard.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source MotherBoard.tcl -notrace
+Command: synth_design -top MotherBoard -part xc7k325tffg676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23363 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1307.742 ; gain = 89.000 ; free physical = 1445 ; free virtual = 3907
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'MotherBoard' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:22]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [/home/sol/Tools/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19488]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (1#1) [/home/sol/Tools/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19488]
+INFO: [Synth 8-6157] synthesizing module 'ClkGen' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/synth_1/.Xil/Vivado-23354-sol-Lenovo-V1000/realtime/ClkGen_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ClkGen' (2#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/synth_1/.Xil/Vivado-23354-sol-Lenovo-V1000/realtime/ClkGen_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ClkDiv' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/ClkDiv.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ClkDiv' (3#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/ClkDiv.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Debounce' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Utility/Debounce.v:21]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cnt_reg' and it is trimmed from '8' to '7' bits. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Utility/Debounce.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'Debounce' (4#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Utility/Debounce.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ROM8k' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/synth_1/.Xil/Vivado-23354-sol-Lenovo-V1000/realtime/ROM8k_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM8k' (5#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/synth_1/.Xil/Vivado-23354-sol-Lenovo-V1000/realtime/ROM8k_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (11) of module 'ROM8k' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:122]
+WARNING: [Synth 8-689] width (32) of port connection 'addrb' does not match port width (11) of module 'ROM8k' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:128]
+INFO: [Synth 8-6157] synthesizing module 'InterruptManageROM' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/synth_1/.Xil/Vivado-23354-sol-Lenovo-V1000/realtime/InterruptManageROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'InterruptManageROM' (6#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/synth_1/.Xil/Vivado-23354-sol-Lenovo-V1000/realtime/InterruptManageROM_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (11) of module 'InterruptManageROM' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:136]
+INFO: [Synth 8-6157] synthesizing module 'RAM16k2p' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/synth_1/.Xil/Vivado-23354-sol-Lenovo-V1000/realtime/RAM16k2p_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM16k2p' (7#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/synth_1/.Xil/Vivado-23354-sol-Lenovo-V1000/realtime/RAM16k2p_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (13) of module 'RAM16k2p' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:150]
+WARNING: [Synth 8-689] width (32) of port connection 'addrb' does not match port width (13) of module 'RAM16k2p' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:157]
+INFO: [Synth 8-6157] synthesizing module 'Ram1m2p' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/synth_1/.Xil/Vivado-23354-sol-Lenovo-V1000/realtime/Ram1m2p_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Ram1m2p' (8#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/synth_1/.Xil/Vivado-23354-sol-Lenovo-V1000/realtime/Ram1m2p_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (18) of module 'Ram1m2p' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:167]
+WARNING: [Synth 8-689] width (32) of port connection 'addrb' does not match port width (18) of module 'Ram1m2p' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:174]
+INFO: [Synth 8-6157] synthesizing module 'Ram2k2p' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/synth_1/.Xil/Vivado-23354-sol-Lenovo-V1000/realtime/Ram2k2p_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Ram2k2p' (9#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/synth_1/.Xil/Vivado-23354-sol-Lenovo-V1000/realtime/Ram2k2p_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (11) of module 'Ram2k2p' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:184]
+WARNING: [Synth 8-689] width (32) of port connection 'addrb' does not match port width (11) of module 'Ram2k2p' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:191]
+INFO: [Synth 8-6157] synthesizing module 'CPUPipeline' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/CPUPipeline.v:22]
+INFO: [Synth 8-6157] synthesizing module 'RegsPC' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeRegs.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'RegsPC' (10#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeRegs.v:22]
+INFO: [Synth 8-6157] synthesizing module 'IFStage' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeModules.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Mux32b8p' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Utility/MUX.v:49]
+INFO: [Synth 8-6157] synthesizing module 'Mux32b4p' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Utility/MUX.v:33]
+INFO: [Synth 8-6157] synthesizing module 'Mux32b2p' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Utility/MUX.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Mux32b2p' (11#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Utility/MUX.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Mux32b4p' (12#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Utility/MUX.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'Mux32b8p' (13#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Utility/MUX.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'IFStage' (14#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeModules.v:22]
+INFO: [Synth 8-6157] synthesizing module 'RegsFD' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeRegs.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'RegsFD' (15#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeRegs.v:52]
+INFO: [Synth 8-6157] synthesizing module 'IDStage' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeModules.v:60]
+INFO: [Synth 8-6157] synthesizing module 'ControllerPipeline' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/ControllerPipeline.v:22]
+	Parameter R bound to: 6'b000000 
+	Parameter BEQ bound to: 6'b000100 
+	Parameter BNE bound to: 6'b000101 
+	Parameter JAL bound to: 6'b000011 
+	Parameter J bound to: 6'b000010 
+	Parameter LW bound to: 6'b100011 
+	Parameter SW bound to: 6'b101011 
+	Parameter ADDI bound to: 6'b001000 
+	Parameter SLTI bound to: 6'b001010 
+	Parameter ANDI bound to: 6'b001100 
+	Parameter ORI bound to: 6'b001101 
+	Parameter XORI bound to: 6'b001110 
+	Parameter LUI bound to: 6'b001111 
+	Parameter STOP bound to: 6'b111111 
+	Parameter ERET bound to: 6'b010000 
+	Parameter AND bound to: 6'b100100 
+	Parameter OR bound to: 6'b100101 
+	Parameter ADD bound to: 6'b100000 
+	Parameter SUB bound to: 6'b100010 
+	Parameter SRL bound to: 6'b000010 
+	Parameter SRA bound to: 6'b000011 
+	Parameter SLL bound to: 6'b000000 
+	Parameter JR bound to: 6'b001000 
+	Parameter XOR bound to: 6'b100110 
+	Parameter SLT bound to: 6'b101010 
+	Parameter SYSCALL bound to: 6'b001100 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/ControllerPipeline.v:100]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/ControllerPipeline.v:168]
+INFO: [Synth 8-6155] done synthesizing module 'ControllerPipeline' (16#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/ControllerPipeline.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'IDStage' (17#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeModules.v:60]
+WARNING: [Synth 8-689] width (32) of port connection 'wdEX' does not match port width (5) of module 'IDStage' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/CPUPipeline.v:104]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/RegFile.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (18#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/RegFile.v:22]
+INFO: [Synth 8-6157] synthesizing module 'RegsDE' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeRegs.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'RegsDE' (19#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeRegs.v:90]
+WARNING: [Synth 8-689] width (32) of port connection 'aluImmEX' does not match port width (1) of module 'RegsDE' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/CPUPipeline.v:123]
+INFO: [Synth 8-6157] synthesizing module 'EXEStage' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeModules.v:169]
+INFO: [Synth 8-6157] synthesizing module 'ALUSimplified' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/ALU/ALUSimplified.v:38]
+INFO: [Synth 8-6157] synthesizing module 'Add' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/ALU/Add.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Add' (20#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/ALU/Add.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Shift' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/ALU/Shift.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Shift' (21#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/ALU/Shift.v:25]
+WARNING: [Synth 8-689] width (32) of port connection 'b' does not match port width (5) of module 'Shift' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/ALU/ALUSimplified.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'ALUSimplified' (22#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/ALU/ALUSimplified.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'EXEStage' (23#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeModules.v:169]
+WARNING: [Synth 8-689] width (32) of port connection 'aluImm' does not match port width (1) of module 'EXEStage' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/CPUPipeline.v:130]
+WARNING: [Synth 8-689] width (32) of port connection 'wdEX' does not match port width (5) of module 'EXEStage' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/CPUPipeline.v:131]
+INFO: [Synth 8-6157] synthesizing module 'RegsEM' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeRegs.v:185]
+INFO: [Synth 8-6155] done synthesizing module 'RegsEM' (24#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeRegs.v:185]
+WARNING: [Synth 8-689] width (32) of port connection 'wdEX' does not match port width (5) of module 'RegsEM' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/CPUPipeline.v:139]
+INFO: [Synth 8-6157] synthesizing module 'MEMStage' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeModules.v:206]
+INFO: [Synth 8-6155] done synthesizing module 'MEMStage' (25#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeModules.v:206]
+INFO: [Synth 8-6157] synthesizing module 'RegsMW' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeRegs.v:245]
+INFO: [Synth 8-6155] done synthesizing module 'RegsMW' (26#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeRegs.v:245]
+INFO: [Synth 8-6157] synthesizing module 'WBStage' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeModules.v:221]
+INFO: [Synth 8-6155] done synthesizing module 'WBStage' (27#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/PipeModules.v:221]
+INFO: [Synth 8-6155] done synthesizing module 'CPUPipeline' (28#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/CPUPipeline.v:22]
+WARNING: [Synth 8-350] instance 'cpu' of module 'CPUPipeline' requires 44 connections, but only 22 given [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:204]
+INFO: [Synth 8-6157] synthesizing module 'QuWei2Addr' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Utility/QuWei2Addr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'QuWei2Addr' (29#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Utility/QuWei2Addr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ZBMem' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/synth_1/.Xil/Vivado-23354-sol-Lenovo-V1000/realtime/ZBMem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ZBMem' (30#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/synth_1/.Xil/Vivado-23354-sol-Lenovo-V1000/realtime/ZBMem_stub.v:6]
+WARNING: [Synth 8-689] width (36) of port connection 'addra' does not match port width (18) of module 'ZBMem' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:288]
+INFO: [Synth 8-6157] synthesizing module 'VGAManager' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Output/VGAManager.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'VGAManager' (31#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Output/VGAManager.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ps2_keyboard' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Input/ps2_keyboard.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_keyboard' (32#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Input/ps2_keyboard.v:6]
+INFO: [Synth 8-6157] synthesizing module 's_port_r' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/s_port_r.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rx_module' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/rx_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rx_detect_module' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/rx_detect_module.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rx_detect_module' (33#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/rx_detect_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rx_control_module' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/rx_control_module.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/rx_control_module.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'rx_control_module' (34#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/rx_control_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rx_bps_module' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/rx_bps_module.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rx_bps_module' (35#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/rx_bps_module.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rx_module' (36#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/rx_module.v:23]
+WARNING: [Synth 8-3848] Net FIFO[32] in module/entity s_port_r does not have driver. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/s_port_r.v:40]
+INFO: [Synth 8-6155] done synthesizing module 's_port_r' (37#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/s_port_r.v:23]
+WARNING: [Synth 8-350] instance 'spr' of module 's_port_r' requires 10 connections, but only 7 given [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:356]
+INFO: [Synth 8-6157] synthesizing module 's_port_t' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/s_port_t.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tx_module' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/tx_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tx_bps_module' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/tx_bps_module.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tx_bps_module' (38#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/tx_bps_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tx_control_module' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/tx_control_module.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/tx_control_module.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tx_control_module' (39#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/tx_control_module.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tx_module' (40#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/tx_module.v:23]
+WARNING: [Synth 8-6090] variable 'can_send' is written by both blocking and non-blocking assignments, entire logic could be removed [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/s_port_t.v:65]
+INFO: [Synth 8-6155] done synthesizing module 's_port_t' (41#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/SerialPort/s_port_t.v:23]
+INFO: [Synth 8-6157] synthesizing module 'GPU0' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Output/GPU0.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ToSeg' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:51]
+INFO: [Synth 8-226] default block is never used [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'ToSeg' (42#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:51]
+INFO: [Synth 8-6157] synthesizing module 'AsciiToSeg' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'AsciiToSeg' (43#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Debug' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:149]
+INFO: [Synth 8-6157] synthesizing module 'SEG_DRV' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:117]
+INFO: [Synth 8-6157] synthesizing module 'SR_latch' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/SR_latch.v:21]
+INFO: [Synth 8-6157] synthesizing module 'NOR2' [/home/sol/Tools/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:27045]
+INFO: [Synth 8-6155] done synthesizing module 'NOR2' (44#1) [/home/sol/Tools/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:27045]
+INFO: [Synth 8-6155] done synthesizing module 'SR_latch' (45#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/SR_latch.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'SEG_DRV' (46#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'Debug' (47#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:149]
+INFO: [Synth 8-6155] done synthesizing module 'GPU0' (48#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Output/GPU0.v:21]
+WARNING: [Synth 8-689] width (1) of port connection '__gpudata' does not match port width (64) of module 'GPU0' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:434]
+INFO: [Synth 8-6157] synthesizing module 'Display4' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:81]
+INFO: [Synth 8-6155] done synthesizing module 'Display4' (49#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:81]
+WARNING: [Synth 8-3936] Found unconnected internal register 'down_reg' and it is trimmed from '4' to '1' bits. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:103]
+WARNING: [Synth 8-3936] Found unconnected internal register 'last_reg' and it is trimmed from '4' to '1' bits. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'MotherBoard' (50#1) [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:22]
+WARNING: [Synth 8-3917] design MotherBoard has port bvcc driven by constant 0
+WARNING: [Synth 8-3331] design s_port_r has unconnected port send_Done
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port led[5]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port led[4]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port led[3]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port led[2]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port led[1]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port led[0]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port switch[9]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port switch[8]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port switch[7]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port switch[6]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port switch[5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1361.367 ; gain = 142.625 ; free physical = 1447 ; free virtual = 3907
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1361.367 ; gain = 142.625 ; free physical = 1451 ; free virtual = 3912
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1361.367 ; gain = 142.625 ; free physical = 1451 ; free virtual = 3912
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7k325tffg676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/sources_1/ip/Ram2k2p/Ram2k2p/Ram2k2p_in_context.xdc] for cell 'tram'
+Finished Parsing XDC File [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/sources_1/ip/Ram2k2p/Ram2k2p/Ram2k2p_in_context.xdc] for cell 'tram'
+Parsing XDC File [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/sources_1/ip/RAM16k2p/RAM16k2p/RAM16k2p_in_context.xdc] for cell 'ram'
+Finished Parsing XDC File [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/sources_1/ip/RAM16k2p/RAM16k2p/RAM16k2p_in_context.xdc] for cell 'ram'
+Parsing XDC File [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/sources_1/ip/Ram1m2p/Ram1m2p/Ram1m2p_in_context.xdc] for cell 'vram'
+Finished Parsing XDC File [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/sources_1/ip/Ram1m2p/Ram1m2p/Ram1m2p_in_context.xdc] for cell 'vram'
+Parsing XDC File [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/sources_1/ip/ClkGen/ClkGen/ClkGen_in_context.xdc] for cell 'clkGen'
+Finished Parsing XDC File [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/sources_1/ip/ClkGen/ClkGen/ClkGen_in_context.xdc] for cell 'clkGen'
+Parsing XDC File [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/sources_1/ip/ZBMem/ZBMem/ZBMem_in_context.xdc] for cell 'zbmem'
+Finished Parsing XDC File [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/sources_1/ip/ZBMem/ZBMem/ZBMem_in_context.xdc] for cell 'zbmem'
+Parsing XDC File [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/sources_1/ip/InterruptManageROM/InterruptManageROM/InterruptManageROM_in_context.xdc] for cell 'imrom'
+Finished Parsing XDC File [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/sources_1/ip/InterruptManageROM/InterruptManageROM/InterruptManageROM_in_context.xdc] for cell 'imrom'
+Parsing XDC File [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/sources_1/ip/ROM8k/ROM8k/ROM8k_in_context.xdc] for cell 'rom'
+Finished Parsing XDC File [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/sources_1/ip/ROM8k/ROM8k/ROM8k_in_context.xdc] for cell 'rom'
+Parsing XDC File [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc]
+WARNING: [Vivado 12-584] No ports matched 'K_ROW[4]'. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'K_ROW[3]'. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'K_ROW[2]'. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'K_ROW[1]'. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'K_ROW[0]'. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'K_COL[3]'. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'K_COL[2]'. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'K_COL[1]'. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'K_COL[0]'. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'button[4]'. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'led_clk'. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'led_dt'. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'led_clr'. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'led_en'. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc:79]
+Finished Parsing XDC File [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/MotherBoard_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MotherBoard_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MotherBoard_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  NOR2 => LUT2: 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1753.531 ; gain = 0.000 ; free physical = 1093 ; free virtual = 3590
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:50 . Memory (MB): peak = 1753.531 ; gain = 534.789 ; free physical = 1193 ; free virtual = 3690
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:50 . Memory (MB): peak = 1753.531 ; gain = 534.789 ; free physical = 1193 ; free virtual = 3690
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for tram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clkGen. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zbmem. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for imrom. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for rom. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:50 . Memory (MB): peak = 1753.531 ; gain = 534.789 ; free physical = 1193 ; free virtual = 3690
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'stage_reg' in module 'ControllerPipeline'
+INFO: [Synth 8-5587] ROM size for "aluOp2" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "aluOp1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "stage" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stage0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stage0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "regs_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/ALU/Add.v:30]
+INFO: [Synth 8-5546] ROM "v_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "isCount" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "isDone" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "BPS_sampling" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "BPS_send" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "isDone" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "FIFO_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element segment_reg was removed.  [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:8]
+INFO: [Synth 8-5545] ROM "counter0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "displaydata2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                             0000
+                 iSTATE0 |                                1 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stage_reg' using encoding 'sequential' in module 'ControllerPipeline'
+WARNING: [Synth 8-327] inferring latch for variable 'aluOp1_reg' [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/ControllerPipeline.v:130]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1753.531 ; gain = 534.789 ; free physical = 1180 ; free virtual = 3678
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'cpu/exeStage/alu/mux2' (Mux32b8p) to 'cpu/exeStage/alu/mux3'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   3 Input     32 Bit       Adders := 1     
+	   7 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      4 Bit         XORs := 1     
++---XORs : 
+	                9 Bit    Wide XORs := 1     
++---Registers : 
+	               65 Bit    Registers := 1     
+	               32 Bit    Registers := 53    
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 2     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 87    
+	                7 Bit    Registers := 4     
+	                5 Bit    Registers := 9     
+	                4 Bit    Registers := 9     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 37    
++---RAMs : 
+	               64 Bit         RAMs := 1     
++---ROMs : 
+	                              ROMs := 8     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 124   
+	   3 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+	   8 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 8     
+	  14 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	  10 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 7     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 87    
+	  14 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 33    
+	   8 Input      1 Bit        Muxes := 7     
+	   7 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MotherBoard 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 11    
+	   3 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module RegsPC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module Mux32b2p 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module IFStage 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module RegsFD 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module ControllerPipeline 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	  14 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 4     
+	  14 Input      1 Bit        Muxes := 1     
+Module IDStage 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module RegFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 32    
+Module RegsDE 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	                5 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 3     
+Module Add 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALUSimplified 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module EXEStage 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module RegsEM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+Module RegsMW 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+Module QuWei2Addr 
+Detailed RTL Component Info : 
++---Adders : 
+	   7 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 1     
+Module VGAManager 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ps2_keyboard 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---XORs : 
+	                9 Bit    Wide XORs := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	               64 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module rx_detect_module 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module rx_control_module 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 5     
+Module rx_bps_module 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module s_port_r 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 4     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 32    
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module tx_bps_module 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module tx_control_module 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   7 Input      4 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 5     
+Module s_port_t 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 33    
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 33    
+Module ToSeg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module AsciiToSeg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module SEG_DRV 
+Detailed RTL Component Info : 
++---Registers : 
+	               65 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 1     
+Module Debug 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module GPU0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module Display4 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5587] ROM size for "idStage/controller/aluOp2" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-6014] Unused sequential element data10/segment_reg was removed.  [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:8]
+WARNING: [Synth 8-6014] Unused sequential element data11/segment_reg was removed.  [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:8]
+WARNING: [Synth 8-6014] Unused sequential element data12/segment_reg was removed.  [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:8]
+WARNING: [Synth 8-6014] Unused sequential element data13/segment_reg was removed.  [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:8]
+WARNING: [Synth 8-6014] Unused sequential element data14/segment_reg was removed.  [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:8]
+WARNING: [Synth 8-6014] Unused sequential element data15/segment_reg was removed.  [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:8]
+WARNING: [Synth 8-6014] Unused sequential element data16/segment_reg was removed.  [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:8]
+WARNING: [Synth 8-6014] Unused sequential element data17/segment_reg was removed.  [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Display/IO.v:8]
+INFO: [Synth 8-5545] ROM "counter0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design MotherBoard has port bvcc driven by constant 0
+WARNING: [Synth 8-3331] design s_port_r has unconnected port send_Done
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port led[5]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port led[4]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port led[3]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port led[2]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port led[1]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port led[0]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port switch[9]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port switch[8]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port switch[7]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port switch[6]
+WARNING: [Synth 8-3331] design MotherBoard has unconnected port switch[5]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spr/r_ptr0_inferred/\r_ptr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (mode_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\idStage/controller/aluOp1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\idStage/controller/goto_intr_reg )
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[31]' (FD) to 'cpu/regsDE/immEX_reg[30]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[30]' (FD) to 'cpu/regsDE/immEX_reg[29]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[29]' (FD) to 'cpu/regsDE/immEX_reg[28]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[28]' (FD) to 'cpu/regsDE/immEX_reg[27]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[27]' (FD) to 'cpu/regsDE/immEX_reg[26]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[26]' (FD) to 'cpu/regsDE/immEX_reg[25]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[25]' (FD) to 'cpu/regsDE/immEX_reg[24]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[24]' (FD) to 'cpu/regsDE/immEX_reg[23]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[23]' (FD) to 'cpu/regsDE/immEX_reg[22]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[22]' (FD) to 'cpu/regsDE/immEX_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[21]' (FD) to 'cpu/regsDE/immEX_reg[20]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[20]' (FD) to 'cpu/regsDE/immEX_reg[19]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[19]' (FD) to 'cpu/regsDE/immEX_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[18]' (FD) to 'cpu/regsDE/immEX_reg[17]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[17]' (FD) to 'cpu/regsDE/immEX_reg[16]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (ToSeg:/\segment_reg[7] )
+INFO: [Synth 8-3886] merging instance 'gpu0/data07/segment_reg[7]' (FD) to 'gpu0/data06/segment_reg[7]'
+INFO: [Synth 8-3886] merging instance 'gpu0/data06/segment_reg[7]' (FD) to 'gpu0/data04/segment_reg[7]'
+INFO: [Synth 8-3886] merging instance 'gpu0/data05/segment_reg[7]' (FD) to 'gpu0/data04/segment_reg[7]'
+INFO: [Synth 8-3886] merging instance 'gpu0/data04/segment_reg[7]' (FD) to 'gpu0/data02/segment_reg[7]'
+INFO: [Synth 8-3886] merging instance 'gpu0/data03/segment_reg[7]' (FD) to 'gpu0/data02/segment_reg[7]'
+INFO: [Synth 8-3886] merging instance 'gpu0/data02/segment_reg[7]' (FD) to 'gpu0/data00/segment_reg[7]'
+INFO: [Synth 8-3886] merging instance 'gpu0/data01/segment_reg[7]' (FD) to 'gpu0/data00/segment_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (gpu0/\data00/segment_reg[7] )
+INFO: [Synth 8-3886] merging instance 'cpu/idStage/controller/goto_intr_reg' (FD) to 'cpu/regsDE/aluOpEX_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regsDE/aluOpEX_reg[4] )
+WARNING: [Synth 8-3332] Sequential element (idStage/controller/aluOp1_reg[4]) is unused and will be removed from module CPUPipeline.
+WARNING: [Synth 8-3332] Sequential element (regsDE/aluOpEX_reg[4]) is unused and will be removed from module CPUPipeline.
+WARNING: [Synth 8-3332] Sequential element (overflow_reg) is unused and will be removed from module ps2_keyboard.
+WARNING: [Synth 8-3332] Sequential element (data00/segment_reg[7]) is unused and will be removed from module GPU0.
+WARNING: [Synth 8-3332] Sequential element (segment_reg[7]) is unused and will be removed from module ToSeg.
+WARNING: [Synth 8-3332] Sequential element (debounce1/cnt_reg[6]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce1/cnt_reg[5]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce1/cnt_reg[4]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce1/cnt_reg[3]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce1/cnt_reg[2]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce1/cnt_reg[1]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce1/cnt_reg[0]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce1/dbtn_reg) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce2/cnt_reg[6]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce2/cnt_reg[5]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce2/cnt_reg[4]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce2/cnt_reg[3]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce2/cnt_reg[2]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce2/cnt_reg[1]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce2/cnt_reg[0]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce2/dbtn_reg) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce3/cnt_reg[6]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce3/cnt_reg[5]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce3/cnt_reg[4]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce3/cnt_reg[3]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce3/cnt_reg[2]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce3/cnt_reg[1]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce3/cnt_reg[0]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (debounce3/dbtn_reg) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (mode_reg) is unused and will be removed from module MotherBoard.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:25 . Memory (MB): peak = 1753.531 ; gain = 534.789 ; free physical = 1121 ; free virtual = 3637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+--------------------+---------------+----------------+
+|Module Name | RTL Object         | Depth x Width | Implemented As | 
++------------+--------------------+---------------+----------------+
+|AsciiToSeg  | segment_reg        | 256x8         | Block RAM      | 
+|GPU0        | data17/segment_reg | 256x8         | Block RAM      | 
+|GPU0        | data16/segment_reg | 256x8         | Block RAM      | 
+|GPU0        | data15/segment_reg | 256x8         | Block RAM      | 
+|GPU0        | data14/segment_reg | 256x8         | Block RAM      | 
+|GPU0        | data13/segment_reg | 256x8         | Block RAM      | 
+|GPU0        | data12/segment_reg | 256x8         | Block RAM      | 
+|GPU0        | data11/segment_reg | 256x8         | Block RAM      | 
+|GPU0        | data10/segment_reg | 256x8         | Block RAM      | 
++------------+--------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+------------+-----------+----------------------+--------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives   | 
++------------+------------+-----------+----------------------+--------------+
+|keyboard    | fifo_reg   | Implied   | 8 x 8                | RAM32M x 2   | 
++------------+------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance gpu0/i_0/data17/segment_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance gpu0/i_1/data16/segment_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance gpu0/i_2/data15/segment_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance gpu0/i_3/data14/segment_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance gpu0/i_4/data13/segment_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance gpu0/i_5/data12/segment_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance gpu0/i_6/data11/segment_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance gpu0/i_7/data10/segment_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clkGen/clk_in1' to pin 'clk_200m_buf/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clkGen/clk_out1' to pin 'clkGen/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'clkGen/clk_in1' to 'counter_reg[31]/C'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clkGen/clk_out2' to pin 'clkGen/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'clkGen/clk_in1' to 'counter_reg[31]/C'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clkGen/clk_out3' to pin 'clkGen/bbstub_clk_out3/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'clkGen/clk_in1' to 'counter_reg[31]/C'
+CRITICAL WARNING: [Synth 8-3321] create_generated_clock attempting to set clock on an unknown port/pin for constraint at line 6 of /home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc:6]
+CRITICAL WARNING: [Synth 8-3321] create_generated_clock attempting to set clock on an unknown port/pin for constraint at line 7 of /home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc:7]
+CRITICAL WARNING: [Synth 8-3321] create_generated_clock attempting to set clock on an unknown port/pin for constraint at line 8 of /home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc. [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/constrs_1/Sword4.xdc:8]
+INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:39 . Memory (MB): peak = 1753.531 ; gain = 534.789 ; free physical = 1000 ; free virtual = 3520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:27 ; elapsed = 00:01:55 . Memory (MB): peak = 1785.547 ; gain = 566.805 ; free physical = 924 ; free virtual = 3437
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+------------+-----------+----------------------+--------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives   | 
++------------+------------+-----------+----------------------+--------------+
+|keyboard    | fifo_reg   | Implied   | 8 x 8                | RAM32M x 2   | 
++------------+------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regsPC/epc_reg[9] )
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/irEX_reg[6]' (FDR) to 'cpu/regsDE/immEX_reg[6]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/irEX_reg[5]' (FDR) to 'cpu/regsDE/immEX_reg[5]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/irEX_reg[4]' (FDR) to 'cpu/regsDE/immEX_reg[4]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/irEX_reg[7]' (FDR) to 'cpu/regsDE/immEX_reg[7]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/irEX_reg[1]' (FDR) to 'cpu/regsDE/immEX_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/irEX_reg[0]' (FDR) to 'cpu/regsDE/immEX_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/irEX_reg[2]' (FDR) to 'cpu/regsDE/immEX_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/irEX_reg[3]' (FDR) to 'cpu/regsDE/immEX_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/irEX_reg[9]' (FDR) to 'cpu/regsDE/immEX_reg[9]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/irEX_reg[8]' (FDR) to 'cpu/regsDE/immEX_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/irEX_reg[10]' (FDR) to 'cpu/regsDE/immEX_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/irEX_reg[11]' (FDR) to 'cpu/regsDE/immEX_reg[11]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/irEX_reg[13]' (FDR) to 'cpu/regsDE/immEX_reg[13]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/irEX_reg[12]' (FDR) to 'cpu/regsDE/immEX_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/irEX_reg[14]' (FDR) to 'cpu/regsDE/immEX_reg[14]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/irEX_reg[15]' (FDR) to 'cpu/regsDE/immEX_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[10]' (FDR) to 'cpu/regsDE/shamtEX_reg[4]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[9]' (FDR) to 'cpu/regsDE/shamtEX_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[8]' (FDR) to 'cpu/regsDE/shamtEX_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[7]' (FDR) to 'cpu/regsDE/shamtEX_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cpu/regsDE/immEX_reg[6]' (FDR) to 'cpu/regsDE/shamtEX_reg[0]'
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[31]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[30]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[29]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[28]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[27]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[26]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[25]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[24]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[23]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[22]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[21]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[20]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[19]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[18]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[17]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[16]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[15]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[14]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[13]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[12]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[11]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[10]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[9]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[8]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[7]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[6]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[5]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[4]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[3]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[2]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[1]) is unused and will be removed from module MotherBoard.
+WARNING: [Synth 8-3332] Sequential element (cpu/regsPC/epc_reg[0]) is unused and will be removed from module MotherBoard.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\out1/code_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (out1/code_reg[7]) is unused and will be removed from module MotherBoard.
+INFO: [Synth 8-4480] The timing for the instance gpu0/data17/segment_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance gpu0/data17/segment_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance gpu0/data15/segment_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance gpu0/data15/segment_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance gpu0/data13/segment_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance gpu0/data13/segment_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance gpu0/data11/segment_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance gpu0/data11/segment_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:34 ; elapsed = 00:02:03 . Memory (MB): peak = 1801.562 ; gain = 582.820 ; free physical = 913 ; free virtual = 3427
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ram has unconnected pin dinb[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vram has unconnected pin dinb[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module tram has unconnected pin dinb[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:36 ; elapsed = 00:02:04 . Memory (MB): peak = 1801.562 ; gain = 582.820 ; free physical = 910 ; free virtual = 3424
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:36 ; elapsed = 00:02:04 . Memory (MB): peak = 1801.562 ; gain = 582.820 ; free physical = 910 ; free virtual = 3424
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:37 ; elapsed = 00:02:05 . Memory (MB): peak = 1801.562 ; gain = 582.820 ; free physical = 916 ; free virtual = 3430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:37 ; elapsed = 00:02:05 . Memory (MB): peak = 1801.562 ; gain = 582.820 ; free physical = 916 ; free virtual = 3430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:37 ; elapsed = 00:02:05 . Memory (MB): peak = 1801.562 ; gain = 582.820 ; free physical = 919 ; free virtual = 3430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:37 ; elapsed = 00:02:05 . Memory (MB): peak = 1801.562 ; gain = 582.820 ; free physical = 919 ; free virtual = 3430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |ClkGen             |         1|
+|2     |ROM8k              |         1|
+|3     |InterruptManageROM |         1|
+|4     |RAM16k2p           |         1|
+|5     |Ram1m2p            |         1|
+|6     |Ram2k2p            |         1|
+|7     |ZBMem              |         1|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |ClkGen             |     1|
+|2     |InterruptManageROM |     1|
+|3     |RAM16k2p           |     1|
+|4     |ROM8k              |     1|
+|5     |Ram1m2p            |     1|
+|6     |Ram2k2p            |     1|
+|7     |ZBMem              |     1|
+|8     |BUFG               |     4|
+|9     |CARRY4             |    70|
+|10    |LUT1               |    30|
+|11    |LUT2               |   149|
+|12    |LUT3               |   239|
+|13    |LUT4               |   208|
+|14    |LUT5               |   493|
+|15    |LUT6               |  2264|
+|16    |MUXF7              |   632|
+|17    |MUXF8              |    17|
+|18    |NOR2               |     2|
+|19    |RAM32M             |     2|
+|20    |RAMB18E1           |     4|
+|21    |FDCE               |    58|
+|22    |FDPE               |     2|
+|23    |FDRE               |  2528|
+|24    |LD                 |     4|
+|25    |IBUF               |    16|
+|26    |IBUFDS             |     1|
+|27    |OBUF               |    34|
+|28    |OBUFT              |     6|
++------+-------------------+------+
+
+Report Instance Areas: 
++------+-----------------+-------------------+------+
+|      |Instance         |Module             |Cells |
++------+-----------------+-------------------+------+
+|1     |top              |                   |  7071|
+|2     |  clkdiv         |ClkDiv             |    35|
+|3     |  cpu            |CPUPipeline        |  4870|
+|4     |    exeStage     |EXEStage           |   138|
+|5     |      muxA       |Mux32b2p_16        |    32|
+|6     |      muxB       |Mux32b2p_17        |    32|
+|7     |      alu        |ALUSimplified      |    43|
+|8     |    idStage      |IDStage            |    27|
+|9     |      controller |ControllerPipeline |    16|
+|10    |    ifStage      |IFStage            |     8|
+|11    |    registers    |RegFile            |  2721|
+|12    |    regsDE       |RegsDE             |  1017|
+|13    |    regsEM       |RegsEM             |   404|
+|14    |    regsFD       |RegsFD             |   240|
+|15    |    regsMW       |RegsMW             |   240|
+|16    |    regsPC       |RegsPC             |    75|
+|17    |  debounce0      |Debounce           |    13|
+|18    |  display1       |VGAManager         |   127|
+|19    |  gpu0           |GPU0               |   271|
+|20    |    data00       |ToSeg_5            |    14|
+|21    |    data01       |ToSeg_6            |    14|
+|22    |    data02       |ToSeg_7            |    14|
+|23    |    data03       |ToSeg_8            |    14|
+|24    |    data04       |ToSeg_9            |    14|
+|25    |    data05       |ToSeg_10           |    14|
+|26    |    data06       |ToSeg_11           |    14|
+|27    |    data07       |ToSeg_12           |    14|
+|28    |    data11       |AsciiToSeg         |     1|
+|29    |    data13       |AsciiToSeg_13      |     1|
+|30    |    data15       |AsciiToSeg_14      |     1|
+|31    |    data17       |AsciiToSeg_15      |     1|
+|32    |    out2         |Debug              |   155|
+|33    |      m9         |SEG_DRV            |   152|
+|34    |        sr       |SR_latch           |    85|
+|35    |  keyboard       |ps2_keyboard       |    57|
+|36    |  out1           |Display4           |    43|
+|37    |  pickIR         |Mux32b4p           |    32|
+|38    |    muxB         |Mux32b2p_4         |    32|
+|39    |  pickPC         |Mux32b4p_0         |    32|
+|40    |    muxB         |Mux32b2p           |    32|
+|41    |  spr            |s_port_r           |   524|
+|42    |    rx           |rx_module          |   112|
+|43    |      bps        |rx_bps_module      |    43|
+|44    |      control    |rx_control_module  |    67|
+|45    |      detect     |rx_detect_module   |     2|
+|46    |  spt            |s_port_t           |   484|
+|47    |    tx           |tx_module          |    56|
+|48    |      tx_bps     |tx_bps_module      |    38|
+|49    |      tx_control |tx_control_module  |    18|
+|50    |  swt0           |ToSeg              |    14|
+|51    |  swt1           |ToSeg_1            |    14|
+|52    |  swt2           |ToSeg_2            |    14|
+|53    |  swt3           |ToSeg_3            |    14|
++------+-----------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:37 ; elapsed = 00:02:05 . Memory (MB): peak = 1801.562 ; gain = 582.820 ; free physical = 919 ; free virtual = 3430
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 99 critical warnings and 86 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:18 ; elapsed = 00:01:27 . Memory (MB): peak = 1801.562 ; gain = 190.656 ; free physical = 975 ; free virtual = 3486
+Synthesis Optimization Complete : Time (s): cpu = 00:01:37 ; elapsed = 00:02:06 . Memory (MB): peak = 1801.570 ; gain = 582.820 ; free physical = 984 ; free virtual = 3495
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 748 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  LD => LDCE: 4 instances
+  NOR2 => LUT2: 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+344 Infos, 138 Warnings, 99 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:02:10 . Memory (MB): peak = 1801.570 ; gain = 602.285 ; free physical = 940 ; free virtual = 3480
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.runs/synth_1/MotherBoard.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MotherBoard_utilization_synth.rpt -pb MotherBoard_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:00.40 . Memory (MB): peak = 1825.574 ; gain = 0.000 ; free physical = 949 ; free virtual = 3479
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 16 09:36:37 2019...

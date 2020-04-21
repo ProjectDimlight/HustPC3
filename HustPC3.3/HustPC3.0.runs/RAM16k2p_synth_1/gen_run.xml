@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="RAM16k2p_synth_1" LaunchPart="xc7k325tffg676-1" LaunchTime="1576425944">
+  <File Type="VDS-TIMING-PB" Name="RAM16k2p_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="RAM16k2p_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="RAM16k2p.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="RAM16k2p_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="RAM16k2p_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="RAM16k2p_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="RAM16k2p.vds"/>
+  <File Type="REPORTS-TCL" Name="RAM16k2p_reports.tcl"/>
+  <File Type="PA-TCL" Name="RAM16k2p.tcl"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RAM16k2p">
+    <File Path="$PSRCDIR/sources_1/ip/RAM16k2p/RAM16k2p.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="RAM16k2p"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RAM16k2p">
+    <File Path="$PSRCDIR/sources_1/ip/RAM16k2p/RAM16k2p.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="RAM16k2p"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

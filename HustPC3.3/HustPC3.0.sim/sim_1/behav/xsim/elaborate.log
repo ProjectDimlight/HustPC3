@@ -1,0 +1,108 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/sol/Tools/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto 695799b6429243f2a89e266f30bf02d6 --incr --debug typical --relax --mt 8 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TestMotherBoard_behav xil_defaultlib.TestMotherBoard xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 11 for port addra [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:122]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 11 for port addrb [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:128]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 11 for port addra [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:136]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 13 for port addra [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:150]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 13 for port addrb [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:157]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 18 for port addra [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:167]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 18 for port addrb [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:174]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 11 for port addra [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:184]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 11 for port addrb [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:191]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port wdEX [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/CPUPipeline.v:104]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port aluImmEX [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/CPUPipeline.v:123]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port aluImm [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/CPUPipeline.v:130]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port wdEX [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/CPUPipeline.v:131]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port b [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/ALU/ALUSimplified.v:52]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port wdEX [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/Core/CPUPipeline.v:139]
+WARNING: [VRFC 10-278] actual bit length 36 differs from formal bit length 18 for port addra [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:288]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 64 for port __gpudata [/home/sol/ZJU/HustPC/HustPC3.3/HustPC3.3/HustPC3.0.srcs/src/MotherBoard.v:434]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKIN1_PERIOD=5.0,CLK...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.ClkGen_clk_wiz
+Compiling module xil_defaultlib.ClkGen
+Compiling module xil_defaultlib.ClkDiv
+Compiling module xil_defaultlib.Debounce
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="kin...
+Compiling module xil_defaultlib.ROM8k
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="kin...
+Compiling module xil_defaultlib.InterruptManageROM
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="kin...
+Compiling module xil_defaultlib.RAM16k2p
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="kin...
+Compiling module xil_defaultlib.Ram1m2p
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="kin...
+Compiling module xil_defaultlib.Ram2k2p
+Compiling module xil_defaultlib.RegsPC
+Compiling module xil_defaultlib.Mux32b2p
+Compiling module xil_defaultlib.Mux32b4p
+Compiling module xil_defaultlib.Mux32b8p
+Compiling module xil_defaultlib.IFStage
+Compiling module xil_defaultlib.RegsFD
+Compiling module xil_defaultlib.ControllerPipeline
+Compiling module xil_defaultlib.IDStage
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.RegsDE
+Compiling module xil_defaultlib.Add
+Compiling module xil_defaultlib.Shift
+Compiling module xil_defaultlib.ALUSimplified
+Compiling module xil_defaultlib.EXEStage
+Compiling module xil_defaultlib.RegsEM
+Compiling module xil_defaultlib.MEMStage
+Compiling module xil_defaultlib.RegsMW
+Compiling module xil_defaultlib.WBStage
+Compiling module xil_defaultlib.CPUPipeline
+Compiling module xil_defaultlib.QuWei2Addr
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="kin...
+Compiling module xil_defaultlib.ZBMem
+Compiling module xil_defaultlib.VGAManager
+Compiling module xil_defaultlib.ps2_keyboard
+Compiling module xil_defaultlib.rx_detect_module
+Compiling module xil_defaultlib.rx_control_module
+Compiling module xil_defaultlib.rx_bps_module
+Compiling module xil_defaultlib.rx_module
+Compiling module xil_defaultlib.s_port_r
+Compiling module xil_defaultlib.tx_bps_module
+Compiling module xil_defaultlib.tx_control_module
+Compiling module xil_defaultlib.tx_module
+Compiling module xil_defaultlib.s_port_t
+Compiling module xil_defaultlib.ToSeg
+Compiling module xil_defaultlib.AsciiToSeg
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.NOR2
+Compiling module xil_defaultlib.SR_latch
+Compiling module xil_defaultlib.SEG_DRV
+Compiling module xil_defaultlib.Debug
+Compiling module xil_defaultlib.GPU0
+Compiling module xil_defaultlib.Display4
+Compiling module xil_defaultlib.MotherBoard
+Compiling module xil_defaultlib.TestMotherBoard
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TestMotherBoard_behav

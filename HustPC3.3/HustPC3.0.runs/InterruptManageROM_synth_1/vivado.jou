@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jan 14 18:21:18 2019
+# Process ID: 9264
+# Current directory: E:/works/AsmandInterface/HustPC3.2/HustPC3.2/HustPC3.0.runs/InterruptManageROM_synth_1
+# Command line: vivado.exe -log InterruptManageROM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source InterruptManageROM.tcl
+# Log file: E:/works/AsmandInterface/HustPC3.2/HustPC3.2/HustPC3.0.runs/InterruptManageROM_synth_1/InterruptManageROM.vds
+# Journal file: E:/works/AsmandInterface/HustPC3.2/HustPC3.2/HustPC3.0.runs/InterruptManageROM_synth_1\vivado.jou
+#-----------------------------------------------------------
+source InterruptManageROM.tcl -notrace

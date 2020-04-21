@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jan 14 17:56:13 2019
+# Process ID: 7020
+# Current directory: E:/works/AsmandInterface/HustPC3.2-最后的/HustPC3.2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10860 E:\works\AsmandInterface\HustPC3.2-最后的\HustPC3.2\HustPC3.0.xpr
+# Log file: E:/works/AsmandInterface/HustPC3.2-最后的/HustPC3.2/vivado.log
+# Journal file: E:/works/AsmandInterface/HustPC3.2-最后的/HustPC3.2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/works/AsmandInterface/HustPC3.2-最后的/HustPC3.2/HustPC3.0.xpr
+INFO: [Project 1-313] Project file moved from '/home/sol/ZJU/HustPC/HustPC3.2' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/works/AsmandInterface/HustPC3.2-最后的/ASM/DrawTest.coe', nor could it be found using path 'E:/home/sol/ZJU/HustPC/ASM/DrawTest.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/works/AsmandInterface/HustPC3.2-最后的/ASM/DrawTestX.coe', nor could it be found using path 'E:/home/sol/ZJU/HustPC/ASM/DrawTestX.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/works/AsmandInterface/HustPC3.2-最后的/zk2coe/hzk.coe', nor could it be found using path 'E:/home/sol/ZJU/HustPC/zk2coe/hzk.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/works/AsmandInterface/HustPC3.2-最后的/ASM/hellotext.coe', nor could it be found using path 'E:/home/sol/ZJU/HustPC/ASM/hellotext.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/works/AsmandInterface/HustPC3.2-最后的/ASM/text.coe', nor could it be found using path 'E:/home/sol/ZJU/HustPC/ASM/text.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/works/AsmandInterface/HustPC3.2-最后的/ASM/40year.coe', nor could it be found using path 'E:/home/sol/ZJU/HustPC/ASM/40year.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/works/AsmandInterface/HustPC3.2-最后的/ASM/40yearX.coe', nor could it be found using path 'E:/home/sol/ZJU/HustPC/ASM/40yearX.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/works/AsmandInterface/HustPC3.2-最后的/ASM/intr_test.coe', nor could it be found using path 'E:/home/sol/ZJU/HustPC/ASM/intr_test.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/works/AsmandInterface/HustPC3.2-最后的/ASM/intr_test_old.coe', nor could it be found using path 'E:/home/sol/ZJU/HustPC/ASM/intr_test_old.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/works/AsmandInterface/HustPC3.2-最后的/ASM/Final.coe', nor could it be found using path 'E:/home/sol/ZJU/HustPC/ASM/Final.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/works/AsmandInterface/HustPC3.2-最后的/ASM/FinalX.coe', nor could it be found using path 'E:/home/sol/ZJU/HustPC/ASM/FinalX.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/works/AsmandInterface/HustPC3.2-最后的/ASM/keycode.coe', nor could it be found using path 'E:/home/sol/ZJU/HustPC/ASM/keycode.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 893.605 ; gain = 171.148
+INFO: [Device 21-403] Loading part xc7k325tffg676-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 14 17:58:54 2019...

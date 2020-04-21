@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../HustPC3.0.srcs/src/Core/ALU/ALUSimplified.v" \
+"../../../../HustPC3.0.srcs/src/Core/ALU/Add.v" \
+"../../../../HustPC3.0.srcs/src/Core/ControllerPipeline.v" \
+"../../../../HustPC3.0.srcs/src/Utility/MUX.v" \
+"../../../../HustPC3.0.srcs/src/Core/PipeModules.v" \
+"../../../../HustPC3.0.srcs/src/Core/PipeRegs.v" \
+"../../../../HustPC3.0.srcs/src/Core/RegFile.v" \
+"../../../../HustPC3.0.srcs/src/Core/ALU/Shift.v" \
+"../../../../HustPC3.0.srcs/src/Core/CPUPipeline.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

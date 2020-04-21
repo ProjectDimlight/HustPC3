@@ -1,0 +1,214 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Mon Dec 16 09:41:31 2019
+| Host         : sol-Lenovo-V1000 running 64-bit Ubuntu 18.04.3 LTS
+| Command      : report_control_sets -verbose -file MotherBoard_control_sets_placed.rpt
+| Design       : MotherBoard
+| Device       : xc7k325t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   145 |
+| Unused register locations in slices containing registers |   190 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           19 |
+|      4 |            2 |
+|      6 |            1 |
+|      8 |            6 |
+|     10 |            3 |
+|    16+ |          114 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             602 |          105 |
+| No           | No                    | Yes                    |              66 |           10 |
+| No           | Yes                   | No                     |            1022 |          173 |
+| Yes          | No                    | No                     |            1188 |          253 |
+| Yes          | No                    | Yes                    |              54 |           16 |
+| Yes          | Yes                   | No                     |            2334 |          580 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+-----------------------------------+---------------------------------------+------------------+----------------+
+|      Clock Signal     |           Enable Signal           |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
++-----------------------+-----------------------------------+---------------------------------------+------------------+----------------+
+|  clkGen/inst/clk_out1 | keyboard/buffer[4]_i_1_n_0        |                                       |                1 |              2 |
+|  clkGen/inst/clk_out1 | spt/tx/tx_control/rTX0_out        | cpu/registers/regs_reg[24][0]_0       |                1 |              2 |
+|  clkGen/inst/clk_out1 | spr/rx/control/p_0_in[7]          | cpu/registers/regs_reg[24][0]_0       |                1 |              2 |
+|  clkGen/inst/clk_out1 | spr/rx/control/p_0_in[6]          | cpu/registers/regs_reg[24][0]_0       |                1 |              2 |
+|  clkGen/inst/clk_out1 | spr/rx/control/p_0_in[5]          | cpu/registers/regs_reg[24][0]_0       |                1 |              2 |
+|  clkGen/inst/clk_out1 | spr/rx/control/p_0_in[4]          | cpu/registers/regs_reg[24][0]_0       |                1 |              2 |
+|  clkGen/inst/clk_out1 | spr/rx/control/p_0_in[3]          | cpu/registers/regs_reg[24][0]_0       |                1 |              2 |
+|  clkGen/inst/clk_out1 | spr/rx/control/p_0_in[2]          | cpu/registers/regs_reg[24][0]_0       |                1 |              2 |
+|  clkGen/inst/clk_out1 | spr/rx/control/p_0_in[1]          | cpu/registers/regs_reg[24][0]_0       |                1 |              2 |
+|  clkGen/inst/clk_out1 | keyboard/buffer[0]_i_1_n_0        |                                       |                1 |              2 |
+|  clkGen/inst/clk_out1 | keyboard/buffer[1]_i_1_n_0        |                                       |                1 |              2 |
+|  clkGen/inst/clk_out1 | keyboard/buffer[2]_i_1_n_0        |                                       |                1 |              2 |
+|  clkGen/inst/clk_out1 | keyboard/buffer[3]_i_1_n_0        |                                       |                1 |              2 |
+|  clkGen/inst/clk_out1 | keyboard/buffer[7]_i_1_n_0        |                                       |                1 |              2 |
+|  clkGen/inst/clk_out1 | keyboard/buffer[5]_i_1_n_0        |                                       |                1 |              2 |
+|  clkGen/inst/clk_out1 | keyboard/buffer[6]_i_1_n_0        |                                       |                1 |              2 |
+|  clkGen/inst/clk_out1 | keyboard/buffer[8]_i_1_n_0        |                                       |                1 |              2 |
+|  clkGen/inst/clk_out1 | keyboard/buffer[9]_i_1_n_0        |                                       |                1 |              2 |
+|  clkGen/inst/clk_out1 | spr/rx/control/p_0_in[0]          | cpu/registers/regs_reg[24][0]_0       |                1 |              2 |
+|  cpun_0_2865_BUFG     |                                   |                                       |                2 |              4 |
+|  clkCPUx_BUFG         |                                   |                                       |                1 |              4 |
+|  clkdiv/out[0]        |                                   |                                       |                1 |              6 |
+|  clkGen/inst/clk_out1 | spt/tx/tx_control/i               | cpu/registers/regs_reg[24][0]_0       |                1 |              8 |
+|  clkGen/inst/clk_out1 | cpu/regsEM/E[0]                   | cpu/regsEM/r_ptr_reg[4][0]            |                1 |              8 |
+|  clkGen/inst/clk_out1 | keyboard/sampling                 | cpu/registers/regs_reg[24][0]_0       |                1 |              8 |
+|  clkGen/inst/clk_out1 | spr/rx/control/i                  | cpu/registers/regs_reg[24][0]_0       |                1 |              8 |
+|  cpu/regsFD/E[0]      |                                   |                                       |                1 |              8 |
+|  clkCPUx_BUFG         |                                   | cpu/idStage/controller/cnt[3]_i_1_n_0 |                1 |              8 |
+|  clkGen/inst/clk_out1 | cpu/regsEM/w_ptr0                 | cpu/regsEM/SR[0]                      |                2 |             10 |
+|  clkGen/inst/clk_out1 | spt/r_ptr0                        | spt/r_ptr[4]_i_1_n_0                  |                2 |             10 |
+|  clkGen/inst/clk_out1 | spr/rx/control/w_ptr_reg[0]       | spr/rx/control/SR[0]                  |                1 |             10 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[6][0][0]  |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[4][7]_i_1__0_n_0         |                                       |                3 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[5][7]_i_1__0_n_0         |                                       |                5 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[6][7]_i_1__0_n_0         |                                       |                5 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[7][7]_i_1_n_0            |                                       |                3 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[8][7]_i_1__0_n_0         |                                       |                3 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[9][7]_i_1__0_n_0         |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spt/r_ptr0                        |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[9][0][0]  |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[8][0][0]  |                                       |                3 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[7][7][0]  |                                       |                1 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[31][7]_i_1__0_n_0        |                                       |                6 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[5][0][0]  |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[4][0][0]  |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[3][0][0]  |                                       |                3 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[31][0][0] |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[30][0][0] |                                       |                4 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[2][0][0]  |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[29][0][0] |                                       |                3 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[28][0][0] |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[27][0][0] |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[26][0][0] |                                       |                4 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[25][0][0] |                                       |                3 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[17][0][0] |                                       |                1 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[19][7]_i_1__0_n_0        |                                       |                3 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[18][7]_i_1__0_n_0        |                                       |                4 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[17][7]_i_1__0_n_0        |                                       |                4 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[15][7]_i_1_n_0           |                                       |                4 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[14][7]_i_1__0_n_0        |                                       |                3 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[16][7]_i_1__0_n_0        |                                       |                5 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[13][7]_i_1__0_n_0        |                                       |                3 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[12][7]_i_1__0_n_0        |                                       |                4 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[11][7]_i_1__0_n_0        |                                       |                3 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[10][7]_i_1__0_n_0        |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[0][7]_i_1__0_n_0         |                                       |                4 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[20][7]_i_1__0_n_0        |                                       |                5 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[3][7]_i_1__0_n_0         |                                       |                4 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[21][7]_i_1__0_n_0        |                                       |                4 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[22][7]_i_1__0_n_0        |                                       |                5 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[23][7]_i_1__0_n_0        |                                       |                5 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[24][7]_i_1__0_n_0        |                                       |                6 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[25][7]_i_1__0_n_0        |                                       |                3 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[26][7]_i_1__0_n_0        |                                       |                3 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[27][7]_i_1__0_n_0        |                                       |                3 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[28][7]_i_1__0_n_0        |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[29][7]_i_1__0_n_0        |                                       |                3 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[2][7]_i_1__0_n_0         |                                       |                4 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[30][7]_i_1__0_n_0        |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spt/FIFO[1][7]_i_1__0_n_0         |                                       |                6 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[13][0][0] |                                       |                2 |             16 |
+|  clkdiv/out[1]        |                                   |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[24][0][0] |                                       |                4 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/E[0]               |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[0][0][0]  |                                       |                3 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[10][0][0] |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[11][0][0] |                                       |                4 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[14][0][0] |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[12][0][0] |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[16][0][0] |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[18][0][0] |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[19][0][0] |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[1][0][0]  |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[20][0][0] |                                       |                2 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[21][0][0] |                                       |                3 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[22][0][0] |                                       |                5 |             16 |
+|  clkGen/inst/clk_out1 | spr/rx/control/FIFO_reg[23][0][0] |                                       |                2 |             16 |
+|  clkGen/inst/clk_out2 | display1/v_count                  | cpu/registers/regs_reg[24][0]_0       |                5 |             20 |
+|  clkGen/inst/clk_out2 |                                   | cpu/registers/regs_reg[24][0]_0       |                4 |             20 |
+|  clkGen/inst/clk_out2 |                                   | display1/rdn_reg_n_0                  |                3 |             24 |
+|  clkGen/inst/clk_out1 | keyboard/p_0_in                   |                                       |                2 |             32 |
+|  clkGen/inst/clk_out1 | cpu/regsEM/data_reg[15]_0[0]      | cpu/regsEM/data_reg[15][0]            |               16 |             32 |
+| ~clkGen/inst/clk_out1 |                                   |                                       |                5 |             36 |
+|  clkGen/inst/clk_out2 |                                   |                                       |                9 |             44 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[29][31]       | cpu/registers/regs_reg[24][0]_0       |               12 |             60 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[20][31]       | cpu/registers/regs_reg[24][0]_0       |               15 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[19][31]       | cpu/registers/regs_reg[24][0]_0       |               15 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[1][31]        | cpu/registers/regs_reg[24][0]_0       |               16 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[18][31]       | cpu/registers/regs_reg[24][0]_0       |               16 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[17][31]       | cpu/registers/regs_reg[24][0]_0       |               15 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[16][31]       | cpu/registers/regs_reg[24][0]_0       |               13 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[15][31]       | cpu/registers/regs_reg[24][0]_0       |               19 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[14][31]       | cpu/registers/regs_reg[24][0]_0       |               17 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[13][31]       | cpu/registers/regs_reg[24][0]_0       |               17 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[12][31]       | cpu/registers/regs_reg[24][0]_0       |               20 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[11][31]       | cpu/registers/regs_reg[24][0]_0       |               18 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[10][31]       | cpu/registers/regs_reg[24][0]_0       |               20 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[0][31]        | cpu/registers/regs_reg[24][0]_0       |               21 |             64 |
+|  clk_BUFG             | display1/E[0]                     |                                       |               23 |             64 |
+|  clk_BUFG             | cpu/regsEM/counter_reg[0][0]      |                                       |               18 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[22][31]       | cpu/registers/regs_reg[24][0]_0       |               14 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[9][31]        | cpu/registers/regs_reg[24][0]_0       |               19 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[8][31]        | cpu/registers/regs_reg[24][0]_0       |               16 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[7][31]_1      | cpu/registers/regs_reg[24][0]_0       |               18 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[6][31]        | cpu/registers/regs_reg[24][0]_0       |               18 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[5][31]        | cpu/registers/regs_reg[24][0]_0       |               19 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[4][31]        | cpu/registers/regs_reg[24][0]_0       |               19 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[3][31]        | cpu/registers/regs_reg[24][0]_0       |               20 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[31][31]       | cpu/registers/regs_reg[24][0]_0       |               14 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[30][31]_0     | cpu/registers/regs_reg[24][0]_0       |               14 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[2][31]        | cpu/registers/regs_reg[24][0]_0       |               18 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[28][31]       | cpu/registers/regs_reg[24][0]_0       |               14 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[27][31]       | cpu/registers/regs_reg[24][0]_0       |               14 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[26][31]       | cpu/registers/regs_reg[24][0]_0       |               15 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[25][31]       | cpu/registers/regs_reg[24][0]_0       |               15 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[24][31]       | cpu/registers/regs_reg[24][0]_0       |               13 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[23][31]       | cpu/registers/regs_reg[24][0]_0       |               13 |             64 |
+|  cpun_0_2865_BUFG     | cpu/regsMW/regs_reg[21][31]       | cpu/registers/regs_reg[24][0]_0       |               15 |             64 |
+|  clkGen/inst/clk_out1 |                                   | cpu/registers/regs_reg[24][0]_0       |               10 |             66 |
+|  clkCPUx_BUFG         | cpu/regsDE/irID_reg[0]_0          | cpu/registers/regs_reg[24][0]_0       |               15 |             84 |
+|  clkGen/inst/clk_out1 |                                   |                                       |               16 |            108 |
+|  clkCPUx_BUFG         | cpu/regsDE/pc_reg[0]              | cpu/registers/regs_reg[24][0]_0       |               20 |            128 |
+|  out2/clk0            |                                   |                                       |               28 |            130 |
+|  clk_BUFG             |                                   |                                       |               40 |            246 |
+|  clkCPUx_BUFG         |                                   | cpu/registers/regs_reg[24][0]_0       |              165 |            970 |
++-----------------------+-----------------------------------+---------------------------------------+------------------+----------------+
+
+

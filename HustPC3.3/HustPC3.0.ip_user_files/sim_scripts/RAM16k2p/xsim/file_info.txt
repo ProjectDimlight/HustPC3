@@ -1,0 +1,2 @@
+RAM16k2p.v,verilog,xil_defaultlib,../../../../HustPC3.0.srcs/sources_1/ip/RAM16k2p/sim/RAM16k2p.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

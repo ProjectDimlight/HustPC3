@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestMotherBoard_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TestMotherBoard" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="255800000fs"></ZoomStartTime>
+      <ZoomEndTime time="376600001fs"></ZoomEndTime>
+      <Cursor1Time time="284000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="164"></NameColumnWidth>
+      <ValueColumnWidth column_width="126"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="56" />
+   <wvobject type="logic" fp_name="/TestMotherBoard/clk1">
+      <obj_property name="ElementShortName">clk1</obj_property>
+      <obj_property name="ObjectShortName">clk1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestMotherBoard/clk2">
+      <obj_property name="ElementShortName">clk2</obj_property>
+      <obj_property name="ObjectShortName">clk2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestMotherBoard/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/switch">
+      <obj_property name="ElementShortName">switch[15:0]</obj_property>
+      <obj_property name="ObjectShortName">switch[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/button">
+      <obj_property name="ElementShortName">button[3:0]</obj_property>
+      <obj_property name="ObjectShortName">button[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestMotherBoard/bvcc">
+      <obj_property name="ElementShortName">bvcc</obj_property>
+      <obj_property name="ObjectShortName">bvcc</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestMotherBoard/seg_clk">
+      <obj_property name="ElementShortName">seg_clk</obj_property>
+      <obj_property name="ObjectShortName">seg_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestMotherBoard/seg_clrn">
+      <obj_property name="ElementShortName">seg_clrn</obj_property>
+      <obj_property name="ObjectShortName">seg_clrn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestMotherBoard/seg_sout">
+      <obj_property name="ElementShortName">seg_sout</obj_property>
+      <obj_property name="ObjectShortName">seg_sout</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestMotherBoard/seg_pen">
+      <obj_property name="ElementShortName">seg_pen</obj_property>
+      <obj_property name="ObjectShortName">seg_pen</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/segment">
+      <obj_property name="ElementShortName">segment[7:0]</obj_property>
+      <obj_property name="ObjectShortName">segment[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/addr">
+      <obj_property name="ElementShortName">addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/led">
+      <obj_property name="ElementShortName">led[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/__r3">
+      <obj_property name="ElementShortName">__r3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">__r3[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/__d3">
+      <obj_property name="ElementShortName">__d3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">__d3[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/__irID">
+      <obj_property name="ElementShortName">__irID[31:0]</obj_property>
+      <obj_property name="ObjectShortName">__irID[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/__pcID">
+      <obj_property name="ElementShortName">__pcID[31:0]</obj_property>
+      <obj_property name="ObjectShortName">__pcID[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/__irEX">
+      <obj_property name="ElementShortName">__irEX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">__irEX[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/__pcEX">
+      <obj_property name="ElementShortName">__pcEX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">__pcEX[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/__irMEM">
+      <obj_property name="ElementShortName">__irMEM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">__irMEM[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/__pcMEM">
+      <obj_property name="ElementShortName">__pcMEM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">__pcMEM[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/__irWB">
+      <obj_property name="ElementShortName">__irWB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">__irWB[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/__pcWB">
+      <obj_property name="ElementShortName">__pcWB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">__pcWB[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/__addrInst">
+      <obj_property name="ElementShortName">__addrInst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">__addrInst[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/__inInst">
+      <obj_property name="ElementShortName">__inInst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">__inInst[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/__addrData">
+      <obj_property name="ElementShortName">__addrData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">__addrData[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/__outData">
+      <obj_property name="ElementShortName">__outData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">__outData[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/__inData">
+      <obj_property name="ElementShortName">__inData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">__inData[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestMotherBoard/__memWrite">
+      <obj_property name="ElementShortName">__memWrite</obj_property>
+      <obj_property name="ObjectShortName">__memWrite</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestMotherBoard/__clk">
+      <obj_property name="ElementShortName">__clk</obj_property>
+      <obj_property name="ObjectShortName">__clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/r">
+      <obj_property name="ElementShortName">r[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/g">
+      <obj_property name="ElementShortName">g[3:0]</obj_property>
+      <obj_property name="ObjectShortName">g[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/b">
+      <obj_property name="ElementShortName">b[3:0]</obj_property>
+      <obj_property name="ObjectShortName">b[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestMotherBoard/hs">
+      <obj_property name="ElementShortName">hs</obj_property>
+      <obj_property name="ObjectShortName">hs</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestMotherBoard/vs">
+      <obj_property name="ElementShortName">vs</obj_property>
+      <obj_property name="ObjectShortName">vs</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/__addrGraphics">
+      <obj_property name="ElementShortName">__addrGraphics[31:0]</obj_property>
+      <obj_property name="ObjectShortName">__addrGraphics[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/__inGraphics">
+      <obj_property name="ElementShortName">__inGraphics[31:0]</obj_property>
+      <obj_property name="ObjectShortName">__inGraphics[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestMotherBoard/__read">
+      <obj_property name="ElementShortName">__read</obj_property>
+      <obj_property name="ObjectShortName">__read</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestMotherBoard/__mode">
+      <obj_property name="ElementShortName">__mode</obj_property>
+      <obj_property name="ObjectShortName">__mode</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/__inText">
+      <obj_property name="ElementShortName">__inText[31:0]</obj_property>
+      <obj_property name="ObjectShortName">__inText[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/__quwei">
+      <obj_property name="ElementShortName">__quwei[15:0]</obj_property>
+      <obj_property name="ObjectShortName">__quwei[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestMotherBoard/uart_rx">
+      <obj_property name="ElementShortName">uart_rx</obj_property>
+      <obj_property name="ObjectShortName">uart_rx</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestMotherBoard/uart_tx">
+      <obj_property name="ElementShortName">uart_tx</obj_property>
+      <obj_property name="ObjectShortName">uart_tx</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/motherBoard/cpu/registers/regs[1]">
+      <obj_property name="ElementShortName">[1][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/motherBoard/cpu/registers/regs[2]">
+      <obj_property name="ElementShortName">[2][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/motherBoard/cpu/registers/regs[3]">
+      <obj_property name="ElementShortName">[3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/motherBoard/cpu/registers/regs[4]">
+      <obj_property name="ElementShortName">[4][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/motherBoard/cpu/registers/regs[5]">
+      <obj_property name="ElementShortName">[5][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/motherBoard/cpu/registers/regs[6]">
+      <obj_property name="ElementShortName">[6][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/motherBoard/cpu/registers/regs[7]">
+      <obj_property name="ElementShortName">[7][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/motherBoard/cpu/registers/regs[8]">
+      <obj_property name="ElementShortName">[8][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/motherBoard/cpu/registers/regs[9]">
+      <obj_property name="ElementShortName">[9][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/motherBoard/cpu/registers/regs[10]">
+      <obj_property name="ElementShortName">[10][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[10][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/motherBoard/cpu/registers/regs[11]">
+      <obj_property name="ElementShortName">[11][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[11][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/motherBoard/cpu/registers/regs[20]">
+      <obj_property name="ElementShortName">[20][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[20][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestMotherBoard/motherBoard/cpu/registers/regs[31]">
+      <obj_property name="ElementShortName">[31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[31][31:0]</obj_property>
+   </wvobject>
+</wave_config>

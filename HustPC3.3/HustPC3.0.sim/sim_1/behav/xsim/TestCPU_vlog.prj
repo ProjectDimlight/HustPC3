@@ -1,0 +1,46 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../HustPC3.0.srcs/sources_1/ip/ClkGen" \
+"../../../../HustPC3.0.srcs/sources_1/ip/ROM8k/sim/ROM8k.v" \
+"../../../../HustPC3.0.srcs/sources_1/ip/RAM16k2p/sim/RAM16k2p.v" \
+"../../../../HustPC3.0.srcs/sources_1/ip/Ram1m2p/sim/Ram1m2p.v" \
+"../../../../HustPC3.0.srcs/sources_1/ip/ClkGen/ClkGen_clk_wiz.v" \
+"../../../../HustPC3.0.srcs/sources_1/ip/ClkGen/ClkGen.v" \
+"../../../../HustPC3.0.srcs/sources_1/ip/ZBMem/sim/ZBMem.v" \
+"../../../../HustPC3.0.srcs/sources_1/ip/Ram2k2p/sim/Ram2k2p.v" \
+"../../../../HustPC3.0.srcs/sources_1/ip/InterruptManageROM/sim/InterruptManageROM.v" \
+"../../../../HustPC3.0.srcs/src/Core/ALU/ALUSimplified.v" \
+"../../../../HustPC3.0.srcs/src/Core/ALU/Add.v" \
+"../../../../HustPC3.0.srcs/src/Core/CPUPipeline.v" \
+"../../../../HustPC3.0.srcs/src/ClkDiv.v" \
+"../../../../HustPC3.0.srcs/src/Core/ControllerPipeline.v" \
+"../../../../HustPC3.0.srcs/src/Utility/Debounce.v" \
+"../../../../HustPC3.0.srcs/src/newDisplay/Display_IO.v" \
+"../../../../HustPC3.0.srcs/src/Display/IO.v" \
+"../../../../HustPC3.0.srcs/src/Utility/MUX.v" \
+"../../../../HustPC3.0.srcs/src/Core/PipeModules.v" \
+"../../../../HustPC3.0.srcs/src/Core/PipeRegs.v" \
+"../../../../HustPC3.0.srcs/src/Utility/QuWei2Addr.v" \
+"../../../../HustPC3.0.srcs/src/Core/RegFile.v" \
+"../../../../HustPC3.0.srcs/src/Core/ALU/Shift.v" \
+"../../../../HustPC3.0.srcs/src/Output/VGAManager.v" \
+"../../../../HustPC3.0.srcs/src/Input/ps2_keyboard.v" \
+"../../../../HustPC3.0.srcs/src/MotherBoard.v" \
+"../../../../HustPC3.0.srcs/src/Display/ShfitReg8b.v" \
+"../../../../HustPC3.0.srcs/src/Utility/RSTrigger.v" \
+"../../../../HustPC3.0.srcs/src/SerialPort/tx_control_module.v" \
+"../../../../HustPC3.0.srcs/src/SerialPort/rx_bps_module.v" \
+"../../../../HustPC3.0.srcs/src/SerialPort/rx_detect_module.v" \
+"../../../../HustPC3.0.srcs/src/SerialPort/rx_control_module.v" \
+"../../../../HustPC3.0.srcs/src/SerialPort/tx_bps_module.v" \
+"../../../../HustPC3.0.srcs/src/SerialPort/rx_module.v" \
+"../../../../HustPC3.0.srcs/src/SerialPort/tx_module.v" \
+"../../../../HustPC3.0.srcs/test/TestMotherBoard.v" \
+"../../../../HustPC3.0.srcs/test/TestALU.v" \
+"../../../../HustPC3.0.srcs/test/TestCPU.v" \
+"../../../../HustPC3.0.srcs/test/TestIntr.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
